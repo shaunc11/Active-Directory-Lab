@@ -1,12 +1,12 @@
-# 🛡️ Windows Server 2022 Active Directory Lab
+# Windows Server 2022 Active Directory Lab
 
 This project simulates a small enterprise environment using **Windows Server 2022** and **Active Directory**. It was built to reinforce my understanding of domain management, user administration, and Group Policy configuration.
 
-> 🔍 **Goal:** Create a fully functional AD lab to simulate real-world IT and helpdesk scenarios.
+> **Goal:** Create a fully functional AD lab to simulate real-world IT and helpdesk scenarios.
 
 ---
 
-## 💻 Lab Setup
+## Lab Setup
 
 | Component         | Details                            |
 |------------------|-------------------------------------|
@@ -18,31 +18,31 @@ This project simulates a small enterprise environment using **Windows Server 202
 
 ---
 
-## ⚙️ Key Features + Skills Demonstrated
+##  Key Features + Skills Demonstrated
 
-### 🧱 Active Directory Domain Services
+### Active Directory Domain Services
 - Promoted WS2022 to domain controller
 - Created forest and static DNS
 - Added OUs: `Helpdesk`, `IT`, `HR`
 
-### 👥 User + Group Management
+### User + Group Management
 - Created users manually and via copy
 - Enabled **Advanced Features** in ADUC for Attribute Editor
 - Practiced account unlocks, password resets, expiration settings
 
-### 🛡️ Group Policy Configuration
+###  Group Policy Configuration
 - Enforced password complexity, lockout policies
 - Used GPMC to edit and link policies to domain
 - Verified results with `gpresult /r` (RSOP)
 
-### 🔧 Troubleshooting + Admin Tools
+### Troubleshooting + Admin Tools
 - `net user`, `ipconfig`, `ping`, and `net use` for network/user diagnostics
 - Simulated account lockouts and computer “fall off domain”
 - Joined clients to domain + installed RSAT for remote management
 
 ---
 
-## 📂 Files Included
+## Files Included
 
 | File                            | Description                                      |
 |---------------------------------|--------------------------------------------------|
@@ -53,16 +53,7 @@ This project simulates a small enterprise environment using **Windows Server 202
 
 ---
 
-## 🧠 Interview-Ready Takeaways
-
-- I can build, manage, and troubleshoot Active Directory from scratch.
-- I know how to use command-line tools for real-world diagnostics.
-- I’ve enforced Group Policies and tracked their application using RSOP.
-- I’ve documented everything clearly and reproducibly.
-
----
-
-## 🔗 Related Resources
+## Related Resources
 
 - 🎓 [My Portfolio Blog Post →](https://carrillocybercom.wordpress.com)  
 - 🎥 [KevTech IT Support Playlist Used](https://www.youtube.com/playlist?list=PLdh13bXVc6-k_u2RPqYAp8R8HtYT_ONht)
