@@ -1,31 +1,72 @@
-# PROJECTNAME
+# 🛡️ Windows Server 2022 Active Directory Lab
 
-## Objective
-[Brief Objective - Remove this afterwards]
+This project simulates a small enterprise environment using **Windows Server 2022** and **Active Directory**. It was built to reinforce my understanding of domain management, user administration, and Group Policy configuration.
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+> 🔍 **Goal:** Create a fully functional AD lab to simulate real-world IT and helpdesk scenarios.
 
-### Skills Learned
-[Bullet Points - Remove this afterwards]
+---
 
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+## 💻 Lab Setup
 
-### Tools Used
-[Bullet Points - Remove this afterwards]
+| Component         | Details                            |
+|------------------|-------------------------------------|
+| Virtualization    | Oracle VirtualBox                  |
+| Domain Controller | Windows Server 2022                |
+| Clients           | 2x Windows 10                      |
+| Domain Name       | `skc11.com`                        |
+| Network           | Host-Only Adapter + Static IPs     |
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+---
 
-## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
+## ⚙️ Key Features + Skills Demonstrated
 
-Every screenshot should have some text explaining what the screenshot is about.
+### 🧱 Active Directory Domain Services
+- Promoted WS2022 to domain controller
+- Created forest and static DNS
+- Added OUs: `Helpdesk`, `IT`, `HR`
 
-Example below.
+### 👥 User + Group Management
+- Created users manually and via copy
+- Enabled **Advanced Features** in ADUC for Attribute Editor
+- Practiced account unlocks, password resets, expiration settings
 
-*Ref 1: Network Diagram*# Active-Directory-Lab
+### 🛡️ Group Policy Configuration
+- Enforced password complexity, lockout policies
+- Used GPMC to edit and link policies to domain
+- Verified results with `gpresult /r` (RSOP)
+
+### 🔧 Troubleshooting + Admin Tools
+- `net user`, `ipconfig`, `ping`, and `net use` for network/user diagnostics
+- Simulated account lockouts and computer “fall off domain”
+- Joined clients to domain + installed RSAT for remote management
+
+---
+
+## 📂 Files Included
+
+| File                            | Description                                      |
+|---------------------------------|--------------------------------------------------|
+| `Lab_Notes.md`                 | Cleaned write-up from my original lab work       |
+| `Screenshots/`                 | Key screenshots: ADUC, RSOP, GPOs                |
+| `User_Creation.ps1` (coming)   | PowerShell script for bulk user creation         |
+| `RSOP_Report.txt`              | Sample Resultant Set of Policy output            |
+
+---
+
+## 🧠 Interview-Ready Takeaways
+
+- I can build, manage, and troubleshoot Active Directory from scratch.
+- I know how to use command-line tools for real-world diagnostics.
+- I’ve enforced Group Policies and tracked their application using RSOP.
+- I’ve documented everything clearly and reproducibly.
+
+---
+
+## 🔗 Related Resources
+
+- 🎓 [My Portfolio Blog Post →](https://carrillocybercom.wordpress.com)  
+- 🎥 [KevTech IT Support Playlist Used](https://www.youtube.com/playlist?list=PLdh13bXVc6-k_u2RPqYAp8R8HtYT_ONht)
+
+---
+
+> 🔐 Built by Shaun — aspiring SOC Analyst, lab builder, and cyber problem solver.
